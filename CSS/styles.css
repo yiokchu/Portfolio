@@ -1,0 +1,912 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    padding: 0;
+}
+
+/* Nav for Phone */
+    #menu-toggle {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .menu-btn > span{
+        transform: rotate(45deg);
+    }
+
+    #menu-toggle:checked + .menu-btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu-toggle:checked + .menu-btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu-toggle:checked ~ .menu{
+        left: 0 !important;
+    }
+
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .menu-btn > span, .menu-btn > span::before, .menu-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #7209B7;
+        transition-duration: .25s;
+    }
+
+    .menu-btn > span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu-btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: white;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+        z-index: 3;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 12px 24px;
+        font-family: system-ui, sans-serif;
+        font-size: 1.25em;
+        font-weight: 700;
+        text-decoration: none;
+        transition-duration: .25s;
+        color: black;
+    }
+
+/*Index*/
+header {
+    text-align: right;
+}
+
+/*Images*/
+.cover {
+    width: 50%;
+    margin-top: .5em;
+    margin-right: .5em;
+}
+
+.cover-image {
+    width: 100%;
+}
+
+/*About section*/
+.title {
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.description {
+    color: white;
+    font-size: .75em;
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    background: -webkit-linear-gradient(#eee, rgb(28, 28, 28));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+}
+
+.btn {
+    color: white;
+    font-size: .80em;
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #7209B7;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 30%;
+    font-weight: 400;
+    border-radius: 20px;
+    margin-left: 35%;
+}
+
+.btn2 {
+    color: white;
+    font-size: .8em;
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #7209B7;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 30%;
+    font-weight: 400;
+    border-radius: 20px;
+    margin-left: 35%;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: .80em;
+}
+
+.btn::before, .btn2::before {
+    content: "";
+    background: 
+    linear-gradient(90deg, transparent, #7209B7, transparent);
+    transition: all 1s;
+    transform: translate(-120px) skew(-20deg);
+}
+
+.btn:hover::before, .btn2:hover::before {
+    transform: translate(300px) skew(-20deg);
+}
+
+.btn:hover, .btn2:hover {
+    background: #F72585;
+}
+
+/*list section*/
+h2 {
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid white;
+    margin: 10%;
+    font-family: system-ui, sans-serif;
+}
+
+section ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+    margin: 10px 25%;
+    cursor: pointer;
+    color: white;
+    font-family: system-ui, sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+}
+
+section ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+}
+
+section ul li:hover{
+    color: white;
+    transition-delay: 0.3s;
+}
+
+section ul li p{
+    position: relative;
+    z-index: 3;
+    padding: 5px 40px;
+    color: white;
+}
+
+section ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border-radius: 50px;
+    transition: background 0.5s, width 0.5s;
+    border: 2px solid #3bf4fb;
+    z-index: -1;
+}
+
+section ul li:hover::before{
+    width: 90%;
+    background: #3bf4fb;
+    transition-delay: 0s, 0.3s;
+}
+
+section ul li::after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+section ul li:hover::after{
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    left: 20px;
+    transition-delay: 0.3s;
+    transform: rotate(45deg) scale(1.5);
+}
+
+/*Contact*/
+.my-info, .my-info h1 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.my-info a{
+    color: white;
+    font-family: system-ui, sans-serif;
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-size: x-small;
+}
+
+section h1 {
+    color: white;
+    font-family: system-ui, sans-serif;
+    margin: 10%;
+    margin-top: 15%;
+    margin-bottom: 0;
+}
+
+.contact-text {
+    color: white;
+    font-family: system-ui, sans-serif;
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+input[type=text], input[type=email] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 10%;
+    margin-top: 0;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+}
+
+textarea {
+    width: 45%;
+    border: 2px solid white;
+    background-color: transparent;
+    margin-right: 7%;
+}
+
+label {
+    color: white;
+    font-family: system-ui, sans-serif;
+    margin: 10%;
+    margin-top: 2%;
+    font-size: small;
+}
+
+/*Projects*/
+.text-cut-out {
+    padding: 12px;
+    background-color: #fff;
+    width: 100%;
+    font-weight: 700;
+    font-size: 180%;
+    font-family: system-ui, sans-serif;
+    margin-top: 8%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5%;
+}
+
+.card {
+    position: relative;
+    width: 70%;
+    height: 250px;
+    color: #fff;
+    background-color: transparent;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    border-top-left-radius: 20px;
+    transform: translateY(70px);
+    transition: transform .3s;
+    font-family: system-ui, sans-serif;
+}
+
+.card_content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card_content::before {
+    content: "";
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 60%;
+    height: 100px;
+    padding: 20px;
+}
+
+.card_title {
+    color: #fff;
+    line-height: 15px;
+    font-family: system-ui, sans-serif;
+}
+
+.card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: system-ui, sans-serif;
+}
+
+.card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    font-family: system-ui, sans-serif;
+}
+
+.card:hover .card_content {
+    transform: translateY(0);
+}
+
+.card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #D7B2F0
+    }
+
+    30% {
+        background-color: #7209B7
+    }
+
+    60% {
+        background-color: #F72585
+    }
+
+    90% {
+        background-color: #FAC748
+    }
+
+    100% {
+        background-color: #3bf4fb
+    }
+}
+
+/*About*/
+.about-text {
+    font-family: system-ui, sans-serif;
+    text-align: right;
+    color: white;
+    font-weight: 800;
+    margin-right: 5%;
+    font-size: x-large;
+}
+
+.description1 {
+    color: white;
+    font-size: .75em;
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+.a-desc{
+    color: white;
+    font-size: .7em;
+    font-family: system-ui, sans-serif;
+}
+
+.grid-container-skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5%;
+    margin-left: 10%;
+    margin-right:  10%;
+}
+
+.skills-container h4 {
+    color: white;
+    font-family: system-ui, sans-serif;
+}
+
+.skill-list{
+    color: white;
+    font-family: system-ui, sans-serif;
+    list-style: disc;
+    margin: 3%;
+    margin-left: 15%;
+    font-size: .75em;
+}
+
+ .skill-list ol li{
+    color: white;
+    font-family: system-ui, sans-serif;
+    list-style: circle;
+    list-style-position: inside;
+}
+
+/*Timeline*/
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: auto 10%;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 7%;
+    margin-left: -3px;
+    z-index: -2;
+}
+
+.containerT {
+    padding: 2% 2%;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 5%;
+    z-index: -1;
+}
+
+.containerT::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: 4px solid #3bf4fb;
+    top: 5%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 0%;
+}
+
+.right::after, .left::after {
+    left: 15px;
+}
+
+.timeline-text {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    font-family: system-ui, sans-serif;
+}
+
+/* Logos */
+.logoC {
+    width: 70%;
+    margin-bottom: 10%;
+    margin: 7%;
+    margin-top: 25%;
+}
+
+.design-Logo {
+    border: 1.5px solid white;
+    border-radius: 5px;
+    font-family: system-ui, sans-serif;
+    color: white;
+    font-size: x-small;
+    font-weight: 600;
+    padding: 1%;
+    width: 20%;
+    height: 110%;
+    text-align: center;
+    margin-left: 7%;
+}
+
+/*Packages*/
+.pImg, .cover-image2 {
+    width: 70%;
+    margin: 10%;
+    margin-top: 0;
+}
+
+.pImg2 {
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.pImg3 {
+    width: 20%;
+    height: 50%;
+}
+
+section h4, .packB-A h4 {
+    font-family: system-ui, sans-serif;
+    color: white;
+    margin-left: 10%;
+}
+
+.all-packs {
+    justify-content: center;
+    text-align: center;
+}
+
+.all-packs h3 {
+    font-family: system-ui, sans-serif;
+    color: white;
+}
+
+.all-packs p, .packB-A p {
+    font-family: system-ui, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.packB-A a {
+    font-family: system-ui, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: .8em;
+}
+
+.packB-A ol li {
+    font-family: system-ui, sans-serif;
+    color: white;
+    font-size: .8em;
+    margin-left: 10%;
+    list-style-type: disc;
+}
+
+/*Hera*/
+.hera-container {
+    margin: 10%;
+}
+
+.dycd-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*footer*/
+footer {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    text-align: center;
+}
+
+footer li p a, footer li p{
+    display: inline-block;
+    font-family: system-ui, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    font-size: .6em;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+}
+
+/* Style specifies to display the desktop class */
+.desktop {
+	display: none;
+}
+
+.goUp {
+    display: none;
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 660px){
+
+    /*Main*/
+    nav ul{
+        text-align: center;
+        padding-top: 2em;
+    }
+
+	nav li{
+        display: inline;
+		padding: 0;
+        font-family: system-ui, sans-serif;
+        text-align: center;
+	}
+	
+	nav li a{
+		display: inline-block;
+		padding: 0.7em;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+	}
+
+    .description, .description1, .a-desc {
+        font-size: .9em;
+        padding-top: 3%;
+    }
+
+    .btn {
+        margin-top: 3%;
+        font-size: .9em;
+        background-color: #7209B7;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 20%;
+        font-weight: 600;
+        border-radius: 30px;
+        margin-left: 40%;
+    }
+
+    .btn a {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    /*Contact*/
+    .btn2 {
+        font-size: .9em;
+        width: 10%;
+        font-weight: 600;
+        border-radius: 30px;
+        margin-left: 40%;
+        padding: 1%;
+    }
+
+    .my-info {
+        margin-top: 5%;
+    }
+
+    .my-info a{
+        font-size: medium;
+    }
+
+    section h1 {
+        color: white;
+        font-family: system-ui, sans-serif;
+        margin: 10%;
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    .contact-text {
+        color: white;
+        font-family: system-ui, sans-serif;
+        margin: 10%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    input[type=text], input[type=email] {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 10%;
+        margin-top: 0;
+        margin-bottom: 3%;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+    }
+
+    textarea {
+        width: 53%;
+        border: 2px solid white;
+        background-color: transparent;
+        margin-right: 7%;
+    }
+
+    label {
+        color: white;
+        font-family: system-ui, sans-serif;
+        margin: 10%;
+        margin-top: 2%;
+    }
+
+    h2 {
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+        border-bottom: 2px solid white;
+        margin: 5%;
+    }
+    
+    /*Projects*/
+    .text-cut-out {
+        margin-top: 5%;
+        font-weight: 700;
+        font-size: 210%;
+    }
+
+    /*About*/
+    .about-text {
+        font-size: 4em;
+    }
+
+    /*Timeline*/
+    .timeline {
+        position: relative;
+        max-width: 100%;
+        margin: auto 10%;
+    }
+    
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .containerT {
+        padding: 2% 2%;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+    .containerT::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: black;
+        border: 4px solid #3bf4fb;
+        top: 5%;
+        border-radius: 50%;
+        z-index: 2;
+        left: 96%;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: 50%;
+    }
+
+    .right::after {
+        left: -16px;
+    }
+
+    /*Poster*/
+    .design-Logo {
+        border: 2px solid white;
+        border-radius: 5px;
+        font-size: small;
+        font-weight: 800;
+        padding: 1%;
+        width: 12%;
+        height: 110%;
+        text-align: center;
+        margin-left: 7%;
+    }
+
+    /*button up*/
+    aside p a{
+        border: 2px solid white;
+        border-radius: 20px;
+        font-family: system-ui, sans-serif;
+        color: white;
+        font-size: larger;
+        font-weight: 800;
+        padding: 1%;
+        width: 10%;
+        text-align: center;
+        margin-left: 80%;
+        text-decoration: none;
+    }
+
+    /*footer*/
+    footer p {
+        font-size: .75em;
+    }
+
+    /* Style specifies to display the desktop class */
+    .desktop {
+	    display: block;
+    }
+
+    /* Style specifies to display the mobile class */
+    .mobile {
+        display: none;
+    }
+
+    .goUp {
+        display: block;
+    }
+}
