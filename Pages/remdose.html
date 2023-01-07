@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            RemDose
+        </title>
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="icon" href="../Images/MyLogo.png">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="mobile">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                    <span></span>
+                </label>
+                <ul class="menu">
+                    <li> <a class="menu-item" href="../index.html"> HOME </a> </li>
+                    <li> <a class="menu-item" href="about.html"> ABOUT </a> </li>
+                    <li> <a class="menu-item" href="projects.html"> PROJECTS </a> </li>
+                    <li> <a class="menu-item" href="contact.html"> CONTACT </a> </li>
+                </ul>
+            </nav>
+
+            <nav class="desktop">
+                <ul>
+                    <li> <a href="../index.html"> HOME </a> </li>
+                    <li> <a href="about.html"> ABOUT </a> </li>
+                    <li> <a href="projects.html"> PROJECTS </a> </li>
+                    <li> <a href="contact.html"> CONTACT </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <p class="TPTitle">RemDose</p>
+                <div class="rem-container">
+                    <div>
+                        <img src="../Images/RemDoseMockup.png" class="topimage" alt="RemDose Project" />
+                    </div>
+                    <div>
+                        <div class="remtextsubtitle"> Description</div>
+                        <div class="remtext">
+                            RemDose is a pill reminder app that keeps people <br> 
+                            on track of their medication and prescriptions with <br>
+                            daily reminders. This app helps people begin forming <br> 
+                            the healthy habit of adhering to their medication <br>
+                            schedule and offers a practical and convenient solution <br>
+                            for the problem of forgetting to take the pills.
+                        </div>
+                        <div class="remtextsubtitle"> Tools </div>
+                        <div class="remtext">
+                            JavaScript<br>
+                            Figma<br>
+                            React Native<br>
+                        </div>
+                        <div class="remtextsubtitle"> Role </div>
+                        <div class="remtext"> Full Stack Developer and Sole Designer </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mobile">
+                <div class="rem-container">
+                    <div>
+                        <div class="remtextsubtitle"> Process </div>
+                        <div class="remtext">
+                            <u>Wireframe</u>: I started by laying out a basic wireframe <br>
+                            with the functionalities I wanted to add to each page.
+                        </div>
+                        <div class="remtextsubtitle"> Functionalities:</div>
+                        <div class="remtext">
+                            <ul> 
+                                <li>Track of Medication</li>
+                                <li>Daily Reminders</li>
+                                    <ol>
+                                        <li>Add/Delete/Edit Medication</li>
+                                        <ol class="insideList">
+                                            <li>Name</li>
+                                            <li>Quantity</li>
+                                            <li>Dose</li>
+                                        </ol>
+                                    </ol>
+                                <li>Alarm</li>
+                                    <ol>
+                                        <li>Audio</li>
+                                        <li>Push Notifications</li>
+                                    </ol>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../Images/CS/remdosewireframe.jpg" class="topimage" alt="RemDose Wireframe" />
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div>
+                        <div class="remtext">
+                            <u>Prototype</u>: Once I had the desired layout I decided <br>
+                            to create a prototype. I needed to carefully consider challenges with the User Experience since the 
+                            targeted audience would also include people 65 and above. <br>
+                            It was key that the UI was simple, friendly, and easy to <br> use and understand. To accomplish this, I implemented <br>
+                            the following design guidelines in my app:
+                            <ul style="margin-left: 2em;">
+                                <li>Make the User Interface big and minimal</li>
+                                <li>Use a legible and large font (the minimum font <br> size used is 16px)</li>
+                                <li>Include space between items</li>
+                                <li>Label Icons</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../Images/CS/RemDoseMuckUp2.jpg" class="mockupImage" alt="RemDose Mockup"/>
+                        <img src="../Images/CS/RemDoseMuckUp.jpg" class="mockupImage" alt="RemDose Mockup" />
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div class="remtextsubtitle"> Typography </div>
+                    <div>
+                        <img src="../Images/CS/typographyRemdose.png" class="typeimage" alt="RemDose Typography"/>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div class="remtextsubtitle"> Main Color Palette </div>
+                    <div>
+                        <img src="../Images/CS/ColorsRemdoseMain.png" class="typeimage" alt="RemDose Color Palette"/>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div class="remtextsubtitle"> Secondary Color Palette </div>
+                    <div>
+                        <img src="../Images/CS/ColorsRemDose2.png" class="typeimage" alt="RemDose Color Palette"/>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div class="remtextsubtitle"> Icons </div>
+                    <div>
+                        <img src="../Images/CS/RemdoseIcons.png" class="typeimage" alt="RemDose Icons"/>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div class="remtextsubtitle"> Logo and Name </div>
+                    <div>
+                        <img src="../Images/CS/Remdosesplash.PNG" class="mockupImage" alt="RemDose Splash Screen"/>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div>
+                        <div class="remtextsubtitle"> Process </div>
+                        <div class="remtext">
+                            <u>Programming</u>:  With the prototype done I started to <br> code the app using React Native which 
+                            allowed me to simultaneously develop for iOS and Android while maintaining the appearance, feel, 
+                            and productivity. <br><br>
+                            React Native gave me access to features along with <br>
+                            access to several integrated core components. I was <br>
+                            able to implement the alerts to users through push notifications 
+                            by creating different channels that <br>
+                            create a unique token for each notification. <br>
+                            In addition, I implemented a circular progress bar that updates every time a medication is checked.
+                        </div>
+                        <div>
+                            <img src="../Images/CS/RemDoseScreen.jpg" class="typeimage" alt="RemDose Screens"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div>
+                        <div class="remtextsubtitle" style="font-size: large;"> Results </div>
+                        <div>
+                            <img src="../Images/CS/remdosescreens.jpg" class="typeimage" alt="RemDose Screens"/>
+                        </div>
+                        <div class="remtext" style="margin-top: 1em;">
+                            The app allows the user to create recurring reminders<br>
+                            and notify them when the medication is due to be taken. <br>
+                            I added features like a checkbox to indicate if the 
+                            medication has been taken as well as a daily progress <br>
+                            bar, so the user has more than one way to identify if <br>
+                            they had taken their medication. The user can add a <br>
+                            new medication or delete or edit an existing one. <br>
+                            After saving, the application will display the medication <br>
+                            details including the medicine name, dosage, <br> 
+                            quantity, and time. Then RemDose is able to send push <br>
+                            notifications at certain times to remind the user to <br>
+                            take their medication. <br><br>
+                            People using RemDose can form the habit of adhering <br>
+                            to their dosage schedules which will improve their treatments and recovery.
+                        </div>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div class="remtextsubtitle" style="font-size: large;"> Final Video  </div>
+                    <div>
+                        <video width="120%" height="120%" autoplay muted style="margin-left: -2em;">
+                            <source src="../Media/Thesis App Demo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <section class="desktop">
+                <div class="rem-container" style="margin-top: 2em;">
+                    <div>
+                        <div class="remtextsubtitle2" style="font-size: xx-large; margin-left: 4em;"> Process </div>
+                        <div class="remtext2">
+                            <u>Wireframe</u>: I started by laying out a basic wireframe <br>
+                            with the functionalities I wanted to add to each page.
+                        </div>
+                        <div class="remtextsubtitle2" style="margin-left: 8em;"> Functionalities:</div>
+                        <div class="remtext2">
+                            <ul> 
+                                <li>Track of Medication</li>
+                                <li>Daily Reminders</li>
+                                    <ol>
+                                        <li style="margin-left: 1em; list-style:inside; list-style: circle;">Add/Delete/Edit Medication</li>
+                                        <ol class="insideList" style="margin-left: 2em; list-style:inside; list-style: disc;">
+                                            <li>Name</li>
+                                            <li>Quantity</li>
+                                            <li>Dose</li>
+                                        </ol>
+                                    </ol>
+                                <li>Alarm</li>
+                                    <ol style="margin-left: 1em; list-style:inside; list-style: circle;">
+                                        <li>Audio</li>
+                                        <li>Push Notifications</li>
+                                    </ol>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../Images/CS/remdosewireframe.jpg" class="topimage" alt="RemDose Wireframe" style="width: 65%;"/>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div style="margin-left: 7em;">
+                        <img src="../Images/CS/RemDoseMuckUp2.jpg" class="mockupImage" alt="RemDose Mockup"/>
+                        <img src="../Images/CS/RemDoseMuckUp.jpg" class="mockupImage" alt="RemDose Mockup" />
+                    </div>
+                    <div style="margin-left: -45em; margin-top: 3em; padding-left: -10em;">
+                        <div class="remtext2">
+                            <u>Prototype</u>: Once I had the desired layout I decided <br>
+                            to create a prototype. I needed to carefully consider challenges <br>
+                            with the User Experience since the targeted audience would <br>
+                            also include people 65 and above. <br><br><br>
+                            It was key that the UI was simple, friendly, and easy to <br> use and understand. To accomplish this, I implemented <br>
+                            the following design guidelines in my app:
+                            <ul style="margin-left: 2em;">
+                                <li>Make the User Interface big and minimal</li>
+                                <li>Use a legible and large font (the minimum font <br> size used is 16px)</li>
+                                <li>Include space between items</li>
+                                <li>Label Icons</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div>
+                        <div class="remtextsubtitle2" style=" font-size: x-large;"> Typography </div>
+                        <div>
+                            <img src="../Images/CS/typographyRemdose.png" class="typeimage" alt="RemDose Typography" style="margin-left: 6em;"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="remtextsubtitle2" style="margin-top: 3em;"> Icons </div>
+                        <div>
+                            <img src="../Images/CS/RemdoseIcons.png" class="typeimage" alt="RemDose Icons" style="width: 50%; margin-left: 0em;"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div>
+                        <div class="remtextsubtitle2" style=" font-size: x-large;"> Main Color Palette </div>
+                        <div>
+                            <img src="../Images/CS/ColorsRemdoseMain.png" class="typeimage" alt="RemDose Color Palette" style="width: 65%; margin-left: 6em;"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="remtextsubtitle2"  style="margin-top: 3em;"> Secondary Color Palette </div>
+                        <div>
+                            <img src="../Images/CS/ColorsRemDose2.png" class="typeimage" alt="RemDose Color Palette" style="width: 50%; margin-left: 5em;"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div>
+                        <div class="remtextsubtitle2" style="margin-left: 7em;;"> Logo and Name </div>
+                        <img src="../Images/CS/RemDose-Logo.png" class="mockupImage" alt="RemDose Logo" style="width: 50%; margin-left: 15em;"/>
+                    </div>
+                    <div>
+                        <img src="../Images/CS/Remdosesplash.PNG" class="mockupImage" alt="RemDose Splash Screen" style="margin-left: 5em; width: 30%;"/>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div>
+                        <div>
+                            <div class="remtextsubtitle2" style="margin-left: 7em;;"> Process </div>
+                            <div class="remtext2">
+                                <u>Programming</u>:  With the prototype done I started to code the app using React Native which 
+                                allowed me to simultaneously develop <br>
+                                for iOS and Android while maintaining the appearance, feel, and productivity. <br><br>
+                                React Native gave me access to features along with access to several integrated core components. I was able to implement the alerts <br>
+                                to users through push notifications by creating different channels that create a unique token for each notification. <br>
+                                In addition, I implemented a circular progress bar that updates every time a medication is checked.
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../Images/CS/RemDoseScreen.jpg" class="typeimage" alt="RemDose Screens" style="width: 50%; margin-left: 15em;"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div>
+                        <div class="remtextsubtitle" style="margin-left: 1em; font-size: xx-large;"> Results </div>
+                        <div>
+                            <img src="../Images/CS/remdosescreens.jpg" class="typeimage" alt="RemDose Screens" style="margin-left: 15em; width:60%;"/>
+                        </div>
+                        <div class="remtext2" style="margin-top: 1em;">
+                            The app allows the user to create recurring reminders and notify them when the medication is due to be taken. <br>
+                            I added features like a checkbox to indicate if the 
+                            medication has been taken as well as a daily progress bar, <br>
+                            so the user has more than one way to identify if they had taken their medication. The user can add a new medication <br>
+                            or delete or edit an existing one. After saving, the application will display the medication details <br>
+                            including the medicine name, dosage, quantity, and time. Then RemDose is able to send push <br>
+                            notifications at certain times to remind the user to take their medication. <br><br>
+                            People using RemDose can form the habit of adhering to their dosage schedules which will improve their treatments and recovery.
+                        </div>
+                    </div>
+                </div>
+                <div class="rem-container">
+                    <div class="remtextsubtitle" style="margin-left: 1em; font-size: xx-large;"> Final Video  </div>
+                    <div>
+                        <video width="120%" height="120%" autoplay muted style="margin-left: -20em;">
+                            <source src="../Media/Thesis App Demo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </body>
+
+    <footer>
+        <ul>
+            <li> <p> © Copyright 2022. All Rights Reserved. </p> </li>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <li> <p> <a href="mailto:chuyiokling@gmail.com"> Email </a> </p> </li> &nbsp;
+            <li> <p> <a href="https://www.linkedin.com/in/yioklingchugarcia/"> LinkedIn </a> </p> </li> &nbsp;
+            <li> <p> <a href="https://github.com/yiokchu"> Github </a> </p> </li> &nbsp;
+        </ul>
+    </footer>
+</html>
