@@ -7,7 +7,7 @@
             Portfolio
         </title>
         <link rel="stylesheet" href="./CSS/styles.css">
-        <link rel="icon" href="./Images/Me-Transparent.png">
+        <link rel="icon" href="./Images/MyLogo.png">
     </head>
 
     <body>
@@ -34,48 +34,156 @@
                 </ul>
             </nav>
 
-            <header>
+            <header class="mobile">
                 <img src="Images/Portfolio-letters.png" class="cover" alt="Portfolio Yiokling Chu Garcia" />
                 <img src="Images/IllustrationCover.gif" class="cover-image" alt="Cover Image" />
+                <div class="header-text">
+                    <h6> Hello! I'm Yiokling a <u>UI/UX Designer + Frontend Developer </u><br> with a background in Graphic Design. <br> 
+                        I'm glad to see you here and I hope you discover something <br> amazing that makes you go WOW!</h6>
+                </div>
             </header>
 
-            <section>
-                <h1 class="title"> ABOUT ME </h1>
-                <p class="description"> I'm <b>Yiokling</b>, I am a Computer Science student with a minor in Graphic Design,
-                    I am currently pursuing my Bachelor's degree at Pace University.
-                    I'm interested in App Development, Software Development,
-                    Web Development, and Front-End Development</p>
-                <p class="btn"> <a href="./Pages/about.html"> Read More </a> </p>
+            <header class="desktop">
+                <img src="Images/IllustrationCoverD.png" class="cover-image" alt="Cover Image" />
+                <img src="Images/Portfolio-letters.png" class="cover" alt="Portfolio Yiokling Chu Garcia" />
+                <div class="header-text">
+                    <h3> Hello! I'm Yiokling a <u>UI/UX Designer + Frontend Developer </u><br> with a background in Graphic Design. 
+                        I'm glad to see you here <br> and I hope you discover something amazing that makes you go WOW!</h3>
+                </div>
+            </header>
+
+            <!-- <div class="card_content">
+                            <a href="./Pages/about.html"> 
+                                <h3> Contract Management </h3>
+                                <span class="card_subtitle" > DYCD Website </span>
+                                <p class="card_description"> FAQ/ Help/ Tutorials Page made with HTML and CSS</p>
+                            </a>
+                        </div>-->
+            <h3 class="mobile">TOP PROJECTS</h3>
+            <h1 class="desktop">TOP PROJECTS</h1>
+
+            <section class="mobile">
+                <section class="index-section" style="padding-top: 5%">
+                    <div class="grid-container">
+                        <div class="Tp">
+                            <a href="./Pages/remdose.html"> 
+                                <img src="Images/RemDoseMockup.png" class="proj-image" alt="RemDose Project" />
+                                <p class="MTitle"> RemDose </p>
+                            </a>
+                            
+                        </div>
+    
+                        <div class="Tp">
+                            <a href="./Pages/spotme.html"> 
+                                <img src="Images/SpotMeMockUp.png" class="proj-image" alt="Spot Me Project" />
+                                <p class="MTitle"> Spot Me </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-container" >
+                        <div class="Tp">
+                            <a href="./Pages/dycd.html"> 
+                                <img src="Images/DYCDMockup.png" class="proj-image" alt="DYCD Project" />
+                                <p class="MTitle"> Contract Management </p>
+                            </a>
+                        </div>
+    
+                        <div class="Tp">
+                            <a href="./Pages/decobap.html"> 
+                                <img src="Images/DecoBapMockUp.png" class="proj-image" alt="Decobap Project" />
+                                <p class="MTitle"> DecoBap </p>
+                            </a>
+                        </div>
+                    </div>
+                </section> 
+            </section>
+            <section class="desktop">
+                <section class="index-section">
+                    <div class="grid-container">
+                        <article class="card">
+                            <img src="Images/RemDoseMockup.png" class="proj-image" alt="RemDose Project" />
+                            <figcaption>
+                                <h3 class="cardtitle"> RemDose </h3>
+                                <p class="card_subtitle">Mobile Application</p>
+                                <p class="card_description"><u>Description:</u> RemDose is a pill reminder app that keeps people <br> 
+                                    on track of their medication and prescriptions with <br>
+                                    daily reminders. This app helps people begin forming <br> 
+                                    the healthy habit of adhering to their medication <br>
+                                    schedule.<br><br>
+                                    <u>Role:</u> Full Stack Developer and Sole Designer
+                                </p>
+                                <a href="./Pages/remdose.html"> 
+                                    View Case Study
+                                </a>
+                            </figcaption>
+                        </article>
+                        <article class="card">
+                            <img src="Images/SpotMeMockUp.png" class="proj-image" alt="Spot Me Project" />
+                            <figcaption>
+                                <h3 class="cardtitle"> Spot Me </h3>
+                                <p class="card_subtitle">Mockup App</p>
+                                <p class="card_description"><u>Description:</u> Spot Me is an app prototype that helps to reunite <br>
+                                    lost animals with their owners and assists stray <br>
+                                    animals have a better quality of life, reducing <br>
+                                    their time on the streets.<br><br>
+                                    <u>Role:</u> Product Designer
+                                </p>
+                                <a href="./Pages/spotme.html"> 
+                                    View Case Study
+                                </a>
+                            </figcaption>
+                        </article>
+                    </div>
+                    <div class="grid-container">
+                        <article class="card">
+                            <img src="Images/DYCDMockup.png" class="proj-image" alt="DYCD Project" />
+                            <figcaption>
+                                <h3 class="cardtitle"> Contract Management </h3>
+                                <p class="card_subtitle">DYCD Website</p>
+                                <p class="card_description"><u>Description:</u> The DYCD contract management website organizes the <br>
+                                    function of contact management for users to find based <br>
+                                    on need. <br><br>
+                                    <u>Role:</u> Designer and Co-Developer
+                                </p>
+                                <a href="./Pages/dycd.html"> 
+                                    View Case Study
+                                </a>
+                            </figcaption>
+                        </article>
+                        <article class="card">
+                            <img src="Images/DecoBapMockUp.png" class="proj-image" alt="DecoBap Project" />
+                            <figcaption>
+                                <h3 class="cardtitle"> DecoBap </h3>
+                                <p class="card_subtitle">Branding</p>
+                                <p class="card_description"><u>Description:</u> DecoBap specializes in the selling of personalized <br>
+                                    desserts and sweets, adapted to the client's <br>
+                                    preferred theme.<br><br>
+                                    <u>Role:</u> Sole Designer 
+                                </p>
+                                <a href="./Pages/decobap.html"> 
+                                    View Case Study
+                                </a>
+                            </figcaption>
+                        </article>
+                    </div>
+                </section>
             </section>
 
+            <section class="desktop"><br><br><br><br><br></section>
+            
             <section>
-                <h2> DO YOU WANT TO SEE...</h2>
-                <ul>
-                    <li><p><a href="./Pages/hera.html"> An Awsome App </a></p></li>
-                    <li><p><a href="./Pages/package.html"> Cool Packages </a></p></li>
-                    <li><p><a href="./Pages/contract.html"> A Website </a></p></li>
-                    <li><p><a href="./Pages/posters.html"> Some Posters </a></p></li>
-                    <li><p><a href="./Pages/evolution.html"> Evolution of this website </a></li>
-                </ul>
+                <h2 class="downloadText"> IF YOU WANT THE PDF VERSION OF</h2>
+                <p class="btn"> <a href="" download="Yiokling PORTFOLIO"> MY PORTFOLIO </a> </p>
             </section>
-
-            <section>
-                <h2> IF YOU WANT THE PDF VERSION OF...</h2>
-                <p class="btn"> <a href="./Docs/ART PORTFOLIO PDF.pdf" download="Yiokling ART PORTFOLIO"> ART PORTFOLIO </a> </p>
-                <p class="btn"> <a href="./Docs/CS PORTFOLIO PDF.pdf" download="Yiokling CS PORTFOLIO">  CS PORTFOLIO </a> </p>
-            </section>
+            
         </div>
     </body>
-
-    <aside class="goUp">
-        <p><a href="#top"> TOP ▲ </a></p>
-    </aside>
 
     <footer>
         <ul>
             <li> <p> © Copyright 2022. All Rights Reserved. </p> </li>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <li> <p> <a href="mailto:yc94652n@pace.edu"> Email </a> </p> </li> &nbsp;
+            <li> <p> <a href="mailto:chuyiokling@gmail.com"> Email </a> </p> </li> &nbsp;
             <li> <p> <a href="https://www.linkedin.com/in/yioklingchugarcia/"> LinkedIn </a> </p> </li> &nbsp;
             <li> <p> <a href="https://github.com/yiokchu"> Github </a> </p> </li> &nbsp;
         </ul>
