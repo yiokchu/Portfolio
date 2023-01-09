@@ -561,7 +561,7 @@ footer p {
 }
 
 /*DESKTOP*/
-@media only screen and (min-width: 660px){
+@media only screen and (min-width: 1000px){
 
     /*Main*/
     nav ul{
@@ -977,4 +977,17 @@ footer p {
     .mobile {
         display: none;
     }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 920px){
+
+    .remtextsubtitle {
+        font-size: 1em;
+    }
+    
+    .remtext {
+        font-size: 1em;
+    }
+
 }
