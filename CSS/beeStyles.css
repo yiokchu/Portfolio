@@ -1,0 +1,185 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(74, 158, 223);
+}
+
+.bee {
+    height: 100px;
+    width: 270px;
+    background-color: rgb(255, 255, 255, 0.4);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -150px;
+    border-radius: 50px;
+    animation: fly 4s infinite;
+}
+
+@keyframes fly {
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+.bee:before {
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 140px;
+    background: linear-gradient(
+        rgb(246, 246, 117) 70%,
+        #202020 70%,
+        #202020 75%,
+        rgb(246, 246, 117) 75%,
+        rgb(246, 246, 117) 80%,
+        #202020 80%,
+        #202020 85%,
+        rgb(246, 246, 117) 85%,
+        rgb(246, 246, 117) 90%,
+        #202020 90%,
+        #202020 95%,
+        rgb(246, 246, 117) 95%
+    );
+    border-radius: 70px;
+    left: 64px;
+    bottom: -45px;
+}
+
+.eye, .eye:before {
+    position: absolute;
+    height: 13.5px;
+    width: 25px;
+    border: 7px solid #202020;
+    border-radius: 20px 20px 0 0;
+    bottom: 95px;
+    border-bottom: none;
+}
+
+.eye {
+    left: 98px;
+}
+
+.eye:before {
+    content: "";
+    bottom: 0;
+    left: 40px;
+}
+
+.antenna, .antenna:before {
+    position: absolute;
+    height: 50px;
+    width: 8px;
+    background-color: #202020;
+}
+
+.antenna {
+    left: 164px;
+    bottom: 130px;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+.antenna:before {
+    content: "";
+    right: 55px;
+    top: 25px;
+    transform: rotate(-50deg);
+}
+
+.antenna:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #202020;
+    border-radius: 50%;
+    left: -6px;
+    bottom: 40px;
+    box-shadow: -72px 35px #202020;
+}
+
+
+.mouth {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    background: radial-gradient(circle at 50% 100%, rgb(255,144,163) 15px, #202020 16px);
+    top: 20px;
+    left: 93px;
+    border-radius: 0 0 40px 40px;
+}
+
+.mouth:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 50px;
+    background-color: white;
+    left: 14px;
+    top: -0.5px;
+}
+
+.comment .words {
+    margin: auto;
+    position: absolute;
+    left: 250px;
+    bottom: 180px;
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    padding: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.w{
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: wrap;
+    overflow: hidden;
+    font-family: monospace;
+    padding: 8px;
+    width: 200px;
+    height: 120px;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.circle {
+    background-color: white;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 200px;
+    bottom: 150px;
+}
+
+.circle2 {
+    background-color: white;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 220px;
+    bottom: 170px;
+}
+
