@@ -597,10 +597,10 @@ footer p {
         }
 
         .cover {
-            width: 35%;
+            width: 30%;
             position: absolute;
             top:auto;
-            left: 800px;
+            left: 900px;
         }
 
         .cover-image {
