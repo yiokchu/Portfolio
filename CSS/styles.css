@@ -600,7 +600,7 @@ footer p {
             width: 30%;
             position: absolute;
             top:auto;
-            left: 900px;
+            right: 3em;
         }
 
         .cover-image {
