@@ -826,13 +826,16 @@ footer p {
     .my-info a{
         color: white;
         font-size: medium;
-        margin-left: 10%;
-        text-decoration: none;
+        text-decoration:underline;
+        margin-left: 0;
     }
     
     .my-info p {
         margin-top: 4em;
         font-family: system-ui, sans-serif;
+        color: white;
+        font-size: medium;
+        margin-left: 10%;
     }
 
     .contact-text {
