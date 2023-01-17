@@ -353,13 +353,15 @@ li{
 .my-info a{
     color: white;
     font-size: small;
-    margin-left: 10%;
-    text-decoration: none;
+    text-decoration:underline;
 }
 
 .my-info p {
     font-family: system-ui, sans-serif;
     font-size: small;
+    color: white;
+    font-size: medium;
+    margin-left: 10%;
 }
 
 .contact-text {
