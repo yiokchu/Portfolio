@@ -870,7 +870,7 @@ footer p {
 
     .TPTitle {
         font-size: xxx-large;
-        margin-left: 11%;
+        margin-left: 7%;
         padding-top: .5em;
         padding-bottom: .5em;
         margin-top: 0;
@@ -892,13 +892,13 @@ footer p {
    .topimage2{
     width: 40%;
     margin-left: 15%;
-}
+   }
 
     .remtextsubtitle {
         font-size: large;
         font-weight: 800;
         margin-top: .7em;
-        margin-left: 35vw;
+        margin-right: 35vw;
     }
 
     .remtext {
@@ -925,14 +925,6 @@ footer p {
         margin-top: 1em;
     }
 
-    .remtext ol {
-        color: white;
-        font-family: system-ui, sans-serif;
-        list-style: circle;
-        list-style-position: inside;
-        margin-left: -15em;
-    }
-	
     .remtext3 {
         color: white;
         font-family: system-ui, sans-serif;
@@ -940,6 +932,14 @@ footer p {
         text-align: left;
         margin-right: 10vw;
         margin-top: 1em;
+    }
+
+    .remtext ol {
+        color: white;
+        font-family: system-ui, sans-serif;
+        list-style: circle;
+        list-style-position: inside;
+        margin-left: -15em;
     }
 
     .remtext ul {
