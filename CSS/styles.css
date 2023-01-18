@@ -885,8 +885,8 @@ footer p {
     }
 
    .topimage{
-       width: 50%;
-       margin-left: 10%;
+       width: 65%;
+       margin-left: 10vw;
    }
 
    .topimage2{
@@ -898,15 +898,12 @@ footer p {
         font-size: large;
         font-weight: 800;
         margin-top: .7em;
-        padding-left: 7em;
-        margin-left: -28em;
+        margin-left: 35vw;
     }
 
     .remtext {
         font-size: .85em;
         text-align: left;
-        margin-left: 15%;
-        margin-left: -27em;
         margin-top: 1em;
     }
 
@@ -916,7 +913,7 @@ footer p {
         font-size: large;
         font-weight: 800;
         margin-top: .7em;
-        margin-left: 5em;
+        margin-left: 10vw;
     }
 
     .remtext2 {
@@ -924,8 +921,7 @@ footer p {
         font-family: system-ui, sans-serif;
         font-size: medium;
         text-align: left;
-        margin-left: 40%;
-        margin-left: 12em;
+        margin-left: 12vw;
         margin-top: 1em;
     }
 
@@ -935,6 +931,15 @@ footer p {
         list-style: circle;
         list-style-position: inside;
         margin-left: -15em;
+    }
+	
+    .remtext3 {
+        color: white;
+        font-family: system-ui, sans-serif;
+        font-size: medium;
+        text-align: left;
+        margin-right: 10vw;
+        margin-top: 1em;
     }
 
     .remtext ul {
